@@ -75,28 +75,44 @@
 
 #header_list_mobile {
     display: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: stretch;
     width: 100%;
     background-color: var(--background-header-list-mobile);
     z-index: 1;
     position: fixed;
     font-family: var(--font1);
     top: 80px;
+    animation: movedown 1s;
+}
+@keyframes movedown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 80px;
+    }
 }
 
 #header_list_mobile>a {
-    background-color: var(--background-header);
+    width: 150px;
+    background-color: var(--b-color-1);
     margin: 10px 0px 10px 0px;
     display: block;
     color: var(--color-font-1);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 15px;
     text-align: center;
     transition: 0.5s ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 0px;
 }
 
 #header_list_mobile>a:hover {
     color: var(--color-font-1-hover);
-    font-size: 26px;
     transition: 0.5s ease-in-out;
 }
 

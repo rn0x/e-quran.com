@@ -32,7 +32,7 @@ export default async function header() {
 
         if (header_list_mobile_view === false) {
 
-            header_list_mobile.style.display = 'block';
+            header_list_mobile.style.display = 'flex';
             header_list_mobile_view = true;
 
         }
