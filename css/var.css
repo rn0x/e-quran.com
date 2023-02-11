@@ -1,0 +1,31 @@
+:root {
+    --font1: 'Al_Jazeera';
+    --font2: 'Vazirmatn_Regular';
+    --font3: 'Amiri';
+    --color-font-1: #ffffff;
+    --color-font-1-hover: #82ce8a;
+    --color-font-2: #000000;
+    --color-font-3: #8c8c8c;
+    --color-font-4: #3f553de9;
+    --color-font-5: #d2ffcbe9;
+    --color-font-6: #5f5f5f;
+    --color-font-7: #3a8e33e9;
+    --background-html: #f9f9f9;
+    --background-header-list-mobile: #eaeaea;
+    --background-header: #365833e9;
+    --background-footer: #3d593a;
+    --background-footer-2: #efefef;
+    --background-footer-3: #f1f1f1;
+    --background-footer-4: #e3e3e3;
+    --b-color-1: #83a67fe9;
+    --b-color-2: #fff;
+    --b-color-3: #698666e9;
+    --b-color-4: #1f2e1ee9;
+    --b-color-5: #e33b3be9;
+    --b-color-6: #568856;
+    --b-color-7: #d7d7d7;
+    --b-color-8: #f2f2f2;
+    --border-color: #dddddd;
+    --border-color-2: #a9a9a9;
+
+}

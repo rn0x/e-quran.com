@@ -1,0 +1,230 @@
+#tafseer_home {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+    padding: 0px;
+}
+
+#tafseer_home li {
+    padding: 10px;
+    width: 220px;
+    background-color: var(--background-header);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+#tafseer_home li:hover {
+    background-color: var(--b-color-4);
+}
+
+#tafseer_home a {
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+#tafseer_home a:hover {
+    color: var(--color-font-1-hover);
+}
+
+/* فهرس سور التفسير  */
+
+.tafseer_index {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+    padding: 0px;
+}
+
+.tafseer_index li {
+    padding: 10px;
+    width: 150px;
+    background-color: var(--background-header);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.tafseer_index li:hover {
+    background-color: var(--b-color-4);
+}
+
+.tafseer_index a {
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+.tafseer_index a:hover {
+    color: var(--color-font-1-hover);
+}
+
+.tafseer_title {
+    text-align: center;
+    color: var(--color-font-7);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+.tafseer_text {
+    direction: rtl;
+    font-family: var(--font2);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* فهرس آيات السورة */
+
+.tafseer_ayat_index {
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+    padding: 0px;
+}
+
+.tafseer_ayat_index li{
+    padding: 8px;
+    width: 100px;
+    background-color: var(--background-header);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.tafseer_ayat_index li:hover {
+    background-color: var(--b-color-6);
+}
+
+.tafseer_ayat_index a {
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+.tafseer_ayat_index a:hover {
+    color: var(--color-font-1-hover);
+}
+
+.tafseer_ayat_index_title {
+    text-align: center;
+    color: var(--color-font-7);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tafseer_title_name {
+    text-align: center;
+    color: var(--color-font-7);
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+/* التالي والسابق */
+
+.tafseer_ayat_n_p {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px;
+    list-style: none;
+    direction: rtl;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.tafseer_ayat_n_p li{
+    width: 70px;
+    background-color: var(--background-header);
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
+.tafseer_ayat_n_p li:hover{
+    background-color: var(--b-color-6);
+}
+
+.tafseer_ayat_n_p_center {
+    background-color: var(--b-color-3) !important;
+}
+
+.tafseer_ayat_n_p_center:hover{
+    background-color: var(--b-color-4) !important;
+}
+
+.tafseer_ayat_n_p a{
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+/* تفسير الاية */
+
+.tafseer_ayat {
+    direction: rtl;
+    display: block;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tafseer_ayat div{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--b-color-8);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tafseer_ayat h3{
+    text-align: center;
+    color: var(--color-font-1);
+    margin-top: 0px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: var(--background-header);
+}
+
+.tafseer_ayat p{
+    margin-top: 10px;
+    text-align: right;
+    font-family: var(--font2);
+    color: var(--color-font-2);
+    font-size: 14px;
+}
+
+@media (max-width: 560px) {
+    #tafseer_home li {
+        width: 150px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .tafseer_index li {
+        padding: 5px;
+        width: 100px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    #tafseer_home li {
+        width: 130px;
+        margin: 5px 5px 5px 5px;
+        font-size: 13px;
+        padding: 5px;
+    }
+}

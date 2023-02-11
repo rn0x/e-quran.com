@@ -1,0 +1,165 @@
+#Search_readers {
+    display: block;
+    background-image: url(/icon/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+}
+
+#readers {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    direction: rtl;
+    font-family: var(--font1);
+    font-size: 16px;
+}
+
+#readers th,
+#readers td {
+    padding: 5px;
+    border: 1px solid var(--border-color-2);
+    color: var(--color-font-6);
+    align-items: center;
+}
+
+#readers th {
+    color: var(--color-font-1);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--background-header);
+    border-bottom: 4px solid var(--b-color-1);
+}
+
+#readers tr:nth-child(even) {
+    background-color: var(--b-color-7) !important;
+}
+
+#readers a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-font-7);
+}
+
+#readers a:hover {
+    color: var(--color-font-4);
+}
+
+#readers_name:hover {
+    background-color: var(--background-footer-4) !important;
+}
+
+/* فهرس ملفات الصوت */
+
+.readers_mp3_top {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: var(--color-font-7);
+    text-align: center;
+}
+
+.readers_mp3_top_small {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    color: var(--color-font-6);
+}
+
+.readers_mp3_home {
+    width: 200px;
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: var(--background-header);
+    border-radius: 5px;
+    border: none;
+    font-family: var(--font1);
+}
+
+.readers_mp3_home:hover {
+    background-color: var(--b-color-6);
+}
+
+.readers_mp3_home a {
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+.readers_mp3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    padding: 0px;
+    direction: rtl;
+    list-style: none;
+}
+
+.readers_mp3 li {
+    width: 100%;
+    background-color: var(--b-color-8);
+    text-align: center;
+    border: 1px solid var(--border-color-2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.readers_mp3 p {
+    color: var(--color-font-7);
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.readers_mp3 audio {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+::-webkit-media-controls-enclosure {
+    background-color: var(--b-color-7);
+}
+
+.readers_mp3 div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.readers_mp3 a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: var(--color-font-3);
+}
+
+.readers_mp3 a:hover {
+    color: var(--color-font-4);
+}
+
+
+
+/* ============= AUDIO ============== */
+
+::-webkit-media-controls-enclosure {
+    border-radius: 5px;
+    height: 20px;
+}

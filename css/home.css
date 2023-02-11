@@ -1,0 +1,421 @@
+/* ============= MENU ============== */
+
+#home_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    direction: ltr;
+}
+
+#home_top_rtl {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:stretch;
+    /* white-space: nowrap; */
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+#home_top_rtl div {
+    width: 180px;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    background-color: var(--background-header);
+}
+
+#home_top_rtl div:hover {
+    background-color: var(--background-footer);
+}
+
+#home_top_rtl a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-font-1);
+}
+
+#home_top_rtl a:hover {
+    color: var(--color-font-1-hover);
+}
+
+
+#home_top_ltr {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ============= QURAN VERSES ============== */
+
+#quran_verses_copy_notice {
+    display: none;
+    color: var(--b-color-5);
+    font-family: var(--font1);
+    margin-bottom: 30px;
+}
+
+#quran_verses_div {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--background-header);
+    box-shadow: #0000000e 0px 4px 12px;
+    padding: 8px;
+    border-radius: 15px;
+    direction: rtl;
+    border-bottom: 4px solid var(--b-color-4);
+    border-top: 4px solid var(--b-color-4);
+}
+
+#quran_verses_title {
+    margin: 0 0 0 0;
+    color: var(--color-font-1);
+    background-color: var(--b-color-4);
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border-bottom: 2px solid var(--b-color-1);
+    border-top: 2px solid var(--b-color-1);
+}
+
+#quran_verses {
+    position: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#quran_verses p {
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--b-color-2);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-family: var(--font3);
+    font-size: 17px;
+}
+
+#quran_verses_bt button {
+    border: none;
+    padding: 5px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: var(--b-color-3);
+    color: var(--color-font-1);
+    font-family: var(--font1);
+    cursor: pointer;
+}
+
+#quran_verses_bt button:hover {
+    background-color: var(--b-color-4);
+}
+
+#quran_verses_surah {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#quran_verses_surah p {
+    color: var(--b-color-4);
+}
+
+#quran_verses_surah span {
+    color: var(--color-font-5);
+}
+
+#quran_verses_en {
+    direction: ltr;
+}
+
+/* ============= SURAH RANDOM ============== */
+
+#surah_random_div {
+    overflow-wrap: break-word;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--background-header);
+    box-shadow: #0000000e 0px 4px 12px;
+    padding: 8px;
+    border-radius: 15px;
+    direction: rtl;
+    border-bottom: 4px solid var(--b-color-4);
+    border-top: 4px solid var(--b-color-4);
+}
+
+#surah_random_div h2 {
+    margin: 0 0 0 0;
+    color: var(--color-font-1);
+    background-color: var(--b-color-4);
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border-bottom: 2px solid var(--b-color-1);
+    border-top: 2px solid var(--b-color-1);
+}
+
+#surah_random_title {
+    margin-top: 10px;
+    color: var(--b-color-4);
+}
+
+#surah_random_audio {
+    max-width: 100%;
+}
+
+#surah_random_title_name {
+    color: var(--color-font-5);
+}
+
+#surah_random_name {
+    color: var(--color-font-5);
+}
+
+#surah_random_update {
+    border: none;
+    padding: 5px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: var(--b-color-3);
+    color: var(--color-font-1);
+    font-family: var(--font1);
+    cursor: pointer;
+}
+
+#surah_random_update:hover {
+    background-color: var(--b-color-4);
+}
+
+
+/* ============= ADHKAR RANDOM ============== */
+
+#adhkar_random {
+    overflow-wrap: break-word;
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--background-header);
+    box-shadow: #0000000e 0px 4px 12px;
+    padding: 8px;
+    border-radius: 15px;
+    direction: rtl;
+    border-bottom: 4px solid var(--b-color-4);
+    border-top: 4px solid var(--b-color-4);
+}
+
+#adhkar_random h2 {
+    margin: 0 0 0 0;
+    color: var(--color-font-1);
+    background-color: var(--b-color-4);
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 15px;
+    border-bottom: 2px solid var(--b-color-1);
+    border-top: 2px solid var(--b-color-1);
+}
+
+#adhkar_random_text {
+    color: var(--color-font-2);
+    background-color: var(--b-color-2);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+#adhkar_random_audio {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+#adhkar_random_ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+#adhkar_random_ul li{
+    color: var(--b-color-4);
+}
+
+#adhkar_random_title {
+    color: var(--color-font-5) !important;
+    margin-bottom: 10px;
+}
+
+#adhkar_random_ul span{
+    color: var(--color-font-5);
+}
+
+#adhkar_random_notice {
+    display: none;
+    color: var(--b-color-5);
+    font-family: var(--font1);
+    margin-bottom: 30px;
+}
+
+#adhkar_random button {
+    border: none;
+    padding: 5px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: var(--b-color-3);
+    color: var(--color-font-1);
+    font-family: var(--font1);
+    cursor: pointer;
+}
+
+#adhkar_random button:hover {
+    background-color: var(--b-color-4);
+}
+
+
+/* ============= AUDIO ============== */
+
+::-webkit-media-controls-enclosure {
+    border-radius: 15px;
+    background-color: var(--b-color-3);
+}
+
+
+/* ============= MOBILE ============== */
+
+@media (max-width: 700px) {
+
+    #home_top {
+        direction: ltr !important;
+    }
+
+    #home_top {
+        display: block;
+    }
+
+    #home_top_ltr {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    #home_top {
+        display: block;
+        align-items: center;
+        direction: ltr;
+    }
+
+    #home_top_rtl div {
+        width: 150px;
+        padding: 4px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 3px;
+        margin-right: 3px;
+        text-align: center;
+        background-color: var(--background-header);
+    }
+
+
+    #home_top_rtl a {
+        font-size: 13px;
+
+    }
+
+    #adhkar_random_ul {
+        display: block;
+        list-style: none;
+        margin-left: 50px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+
+    #home_top_rtl div {
+        width: 130px;
+        padding: 4px;
+    }
+
+    #home_top_rtl a {
+        font-size: 13px;
+
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    #quran_verses_div {
+        width: 95%;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    
+    #surah_random_div {
+        width: 95%;
+        padding: 5px;
+    }
+
+
+    #home_top_rtl div {
+        width: 100px;
+        padding: 4px;
+    }
+
+    #home_top_rtl a {
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 270px) {
+
+    #home_top_rtl div {
+        width: 100%;
+        padding: 4px;
+    }
+
+    #home_top_rtl a {
+        font-size: 12px;
+
+    }
+}

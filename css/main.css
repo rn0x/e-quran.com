@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0 0 0 0;
+    max-width: 100%;
+    background-color: var(--background-html);
+    font-size: 14px;
+    font-family: var(--font1);
+}
+
+#content {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: var(--font1);
+    padding: 10px;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}

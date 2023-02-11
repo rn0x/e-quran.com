@@ -1,0 +1,254 @@
+/* ============= فهرس القرآن ============ */
+
+#index_quran_title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--color-font-4);
+}
+
+#index_quran_tab {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    direction: rtl;
+    padding: 5px;
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+#index_quran_tab th,
+#index_quran_tab td {
+    padding: 5px;
+    border: 0;
+    text-align: center;
+    color: var(--color-font-6);
+    border: 1px solid var(--border-color-2);
+}
+
+#index_quran_tab th {
+    color: var(--color-font-1);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--background-header);
+    border-bottom: 4px solid var(--b-color-1);
+}
+
+#index_quran_tab tr:nth-child(even) {
+    background-color: var(--b-color-7) !important;
+}
+
+#index_quran_tab a {
+    text-decoration: none;
+    color: var(--color-font-7);
+    font-weight: bold;
+}
+
+#index_quran_tab a:hover {
+    color: var(--color-font-4);
+}
+
+
+/* =============  div سور القرآن الكريم ============ */
+
+
+#surah {
+    direction: rtl;
+}
+
+#surah_item {
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#surah_top_p_w {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#surah_A_plus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    direction: ltr;
+    font-family: var(--font1);
+}
+
+#surah_A_plus img {
+    width: 15px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#surah_A_minus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    direction: ltr;
+    font-family: var(--font1);
+}
+
+#surah_A_minus img {
+    width: 15px;
+    align-items: center;
+    margin-left: 5px;
+}
+
+/* ============= معلومات حول سور القرآن الكريم ============ */
+
+#surah_info {
+    width: 90%;
+    background-color: var(--b-color-1);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-all;
+    color: var(--color-font-1);
+}
+
+#surah_info_title {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#surah_info_title img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#surah_info h2 {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#surah_info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    word-break: break-all;
+    text-align: right;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+#surah_info ul li {
+    display: block;
+    /* line-height: 50px; */
+    background-color: var(--b-color-3);
+    color: #ffffff;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+    padding: 7px;
+
+}
+
+/* ============= نص سور القرآن الكريم ============ */
+
+#surah_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#surah_top a {
+    text-decoration: none;
+    color: var(--color-font-1);
+    background-color: var(--b-color-4);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+#surah_top a:hover {
+    background-color: var(--b-color-3);
+}
+
+#surah_text {
+    font-family: var(--font3);
+}
+
+#surah_text_title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--color-font-7);
+}
+
+#surah_text_content  {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--color-font-2);
+}
+
+/* ============= MOBILE ============ */
+
+@media (max-width: 550px) {
+
+    #index_quran_tab th {
+        font-size: 12px;
+    }
+
+    #index_quran_tab {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+
+
+    #surah_info ul {
+        justify-content: right;
+    }
+
+    #surah_info h2 {
+        font-size: 14px;
+    }
+
+    #surah_info ul li {
+        display: block;
+        padding: 4px;
+        font-size: 12px;
+    
+    }
+}
+
+
+@media (max-width: 380px) {
+
+
+    #surah_A_plus {
+        font-size: 12px;
+    }
+    #surah_A_minus {
+        font-size: 12px;
+    }
+}
