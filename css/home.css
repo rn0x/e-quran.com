@@ -64,7 +64,7 @@
 }
 
 #quran_verses_div {
-    width: 80%;
+    width: 95%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -148,7 +148,7 @@
 
 #surah_random_div {
     overflow-wrap: break-word;
-    width: 80%;
+    width: 95%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -215,7 +215,7 @@
 
 #adhkar_random {
     overflow-wrap: break-word;
-    width: 80%;
+    width: 95%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
