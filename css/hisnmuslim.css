@@ -1,0 +1,155 @@
+#hisnmuslim_info {
+    width: 80%;
+    background-color: var(--b-color-8);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+#hisnmuslim_info_book {
+    width: 80px;
+}
+
+#hisnmuslim_info_text {
+    margin-right: 10px;
+    font-size: 13px;
+    color: var(--color-font-7);
+}
+
+#Search_hisnmuslim {
+    display: block;
+    background-image: url(/icon/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+}
+
+
+#hisnmuslim_index {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    direction: rtl;
+    font-family: var(--font1);
+    font-size: 16px;
+}
+
+#hisnmuslim_index th,
+#hisnmuslim_index td {
+    padding: 5px;
+    border: 1px solid var(--border-color-2);
+    color: var(--color-font-6);
+    align-items: center;
+}
+
+#hisnmuslim_index th {
+    color: var(--color-font-1);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--background-header);
+    border-bottom: 4px solid var(--b-color-1);
+}
+
+#hisnmuslim_index tr:nth-child(even) {
+    background-color: var(--b-color-7) !important;
+}
+
+#hisnmuslim_index a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-font-7);
+}
+
+#hisnmuslim_index a:hover {
+    color: var(--color-font-4);
+}
+
+/* صفحات الأذكار */
+
+
+.hisnmuslim_content_title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-font-7);
+}
+
+.hisnmuslim_content_bt {
+    width: 200px;
+    display: block;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: var(--font1);
+    color: var(--color-font-1);
+    background-color: var(--b-color-1);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hisnmuslim_content {
+    text-align: center;
+    width: 95%;
+    background-color: var(--b-color-8);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    direction: rtl;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font3);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hisnmuslim_content_bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    margin: 0 0 0 0;
+}
+
+.hisnmuslim_content_bottom p {
+    margin: 0 0 0 0;
+    font-family: var(--font1);
+    color: var(--color-font-6);
+    font-size: 16px;
+}
+
+.hisnmuslim_content_bottom span {
+    color: var(--color-font-7);
+}
+
+.hisnmuslim_content_bottom a {
+    text-align: center;
+}
+
+
+.hisnmuslim_content_bottom img {
+    display: block;
+    width: 25px;
+    margin: 0 0 0 0;
+}
