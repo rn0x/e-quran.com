@@ -6,7 +6,9 @@ import readers from './readers.js';
 import hisnmuslim from './hisnmuslim.js';
 
 
+/* Open Graph | Image Preview */
 const hostname = window.location.origin;
+document.querySelector('meta[property="og:image"]').content = `${hostname}/files/image/preview.png`
 
 /* HEADER AND FOORER LOAD  */
 
