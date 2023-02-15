@@ -4,7 +4,6 @@ import home from './home.js';
 import history from './history.js';
 import readers from './readers.js';
 import hisnmuslim from './hisnmuslim.js';
-import Hijri_Calendar from './Hijri_Calendar.js';
 
 
 /* Open Graph | Image Preview */
@@ -22,4 +21,3 @@ await home();
 await history();
 await readers();
 await hisnmuslim();
-await Hijri_Calendar();
