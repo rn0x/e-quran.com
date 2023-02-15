@@ -1,0 +1,131 @@
+#Hijri_Calendar {
+    direction: rtl;
+    font-family: var(--font1);
+}
+
+#Calendar_header_title {
+    text-align: center;
+    color: var(--color-font-7);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#Calendar_header_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Calendar_header_top>div {
+    margin: 5px 30px 5px 30px;
+}
+
+#Calendar_number {
+    color: var(--color-font-7);
+    font-size: 165px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0 0 0;
+}
+
+#Calendar_today {
+    display: block;
+    text-align: center;
+}
+
+#today_ar {
+    font-size: 60px;
+    margin: 0 0 0 0;
+    color: var(--color-font-2);
+}
+
+#today_en {
+    font-size: 15px;
+    color: var(--color-font-7);
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+#Calendar_header_bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 0.5px;
+    border-bottom: 0.5px;
+    border-top-style: solid;
+    border-top-color: var(--border-color-2);
+    border-bottom-style: solid;
+    border-bottom-color: var(--border-color-2);
+}
+
+#header_bottom>p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Calendar_header_bottom_Gregorian {
+    direction: ltr;
+}
+
+#Hijri_Calendar_TIME {
+    text-align: center;
+    color: var(--color-font-7);
+}
+
+
+/* التفسير الميسر  */
+
+#tafseerMouaser_random {
+    display: block;
+    background-color: var(--b-color-8);
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 7px;
+    text-align: center;
+}
+
+#title_tfs {
+    color: var(--color-font-7);
+    font-size: 16px;
+}
+
+#tfs_ayh , #tfs {
+    padding: 5px;
+    background-color: var(--b-color-2);
+    border-radius: 5px;
+}
+
+#tfs_info  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#tfs_info p {
+    font-size: 12px;
+    color: var(--color-font-2);
+}
+
+#tfs_info span {
+    font-size: 12px;
+    color: var(--color-font-7);
+}
+
+
+@media (max-width: 480px) {
+
+    #Calendar_number {
+        font-size: 130px;
+    }
+
+    #today_ar {
+        font-size: 40px;
+    }
+}

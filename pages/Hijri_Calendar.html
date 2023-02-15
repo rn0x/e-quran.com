@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" id="e_quran">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:type" content="article"> <!-- content="article" قم بتغييرها الى للمقالات -->
+    <meta property="og:title" content="التاريخ الهجري - المصحف الإلكتروني"> <!-- عنوان الصفحه -->
+    <meta property="og:site_name" content="المصحف الإلكتروني"> <!-- إسم الموقع -->
+    <meta property="og:image" content="/files/image/preview.png" /> <!-- صورة المعاينة للصفحة -->
+    <meta property="og:description" content="التاريخ الهجري - صفحة تعرض تاريخ اليوم هجري وميلادي وتعرض آيات عشوائية مع تفسيرها ." /> <!-- وصف الصفحة -->
+    <meta name="description" content="التاريخ الهجري - صفحة تعرض تاريخ اليوم هجري وميلادي وتعرض آيات عشوائية مع تفسيرها ." /> <!-- 2 وصف الصفحة -->
+    <title>التاريخ الهجري - المصحف الإلكتروني</title> <!-- إسم الموقع -->
+    <link rel="stylesheet" href="/css/header.css"> <!-- ملف الإستايل لـ الهيدر -->
+    <link rel="stylesheet" href="/css/footer.css"> <!-- ملف الإستايل لـ الفوتر -->
+    <link rel="stylesheet" href="/css/font.css"> <!-- ملف إستايل | الخطوط  -->
+    <link rel="stylesheet" href="/css/var.css" id="var"> <!-- ملف متغيرات الـ الإستايل -->
+    <link rel="stylesheet" href="/css/main.css"> <!-- ملف الإستايل الأساسي -->
+    <link rel="stylesheet" href="/css/Hijri_Calendar.css">
+    <link rel="icon" href="/icon/e-quran-black.png" type="image/png"> <!-- ايقونة المتصفح -->
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- الهيدر مربوط بالجافاسكربت -->
+    </header>
+
+
+    <div id="content">
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+        <div id="Hijri_Calendar">
+
+            <div id="Calendar_header">
+
+                <h1 id="Calendar_header_title">التاريخ الهجري</h1>
+
+                <div id="Calendar_header_top">
+                    <p id="Calendar_number"></p>
+
+                    <div id="Calendar_today">
+
+                        <p id="today_ar"></p>
+                        <p id="today_en"></p>
+
+                    </div>
+                </div>
+
+                <P id="Hijri_Calendar_TIME"></P>
+
+                <div id="Calendar_header_bottom">
+
+                    <p id="Calendar_header_bottom_Hijri"></p>
+
+                    <P id="Calendar_header_bottom_Gregorian"></P>
+
+                </div>
+
+            </div>
+
+            <div id="tafseerMouaser_random">
+
+                <p id="title_tfs">
+                    التفسير الميسر للقرآن الكريم
+                </p>
+
+                <p id="tfs_ayh">
+
+                </p>
+
+                <p id="tfs">
+
+                </p>
+
+                <div id="tfs_info">
+                    <p>سورة: <span id="tfs_name"></span></p>
+                    <p>الاية رقم: <span id="tfs_number"></span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+    </div>
+
+
+    <footer id="footer">
+        <!-- الفوتر مربوط بالجافاسكربت -->
+    </footer>
+
+</body>
+
+<script src="/js/moment/moment-with-locales.min.js"></script>
+<script src="/js/moment/moment-hijri.js"></script>
+<script type="module" src="/js/main.js"></script> <!-- ملف الجافاسكربت الرئيسي -->
+
+<script type="module">
+    let Calendar_number = document.getElementById('Calendar_number');
+    let today_ar = document.getElementById('today_ar');
+    let today_en = document.getElementById('today_en');
+    let Calendar_header_bottom_Hijri = document.getElementById('Calendar_header_bottom_Hijri');
+    let Calendar_header_bottom_Gregorian = document.getElementById('Calendar_header_bottom_Gregorian');
+    let Hijri_Calendar_TIME = document.getElementById('Hijri_Calendar_TIME');
+    let tfs_ayh = document.getElementById('tfs_ayh');
+    let tfs = document.getElementById('tfs');
+    let tfs_name = document.getElementById('tfs_name');
+    let tfs_number = document.getElementById('tfs_number');
+    let today = moment().locale('ar-SA').format('dddd'); // اليوم
+    let todayEn = moment().locale('en').format('dddd'); //  EN اليوم
+    let Hijri = moment().locale('ar-SA').format('iMMMM iYYYY');
+    let Hijri_Number = moment().locale('ar-SA').format('iD');
+    let Gregorian = moment().locale('en').format('YYYY MMMM D');
+    let time = moment().locale('ar-SA').format('h:mm:ss a');
+    let response = await fetch("/files/json/tafseerMouaser.json");
+    let json = await response?.json();
+    let json_Random = json[Math.floor(Math.random() * json.length)];
+
+    Calendar_number.innerText = Hijri_Number
+    today_ar.innerText = today
+    today_en.innerText = todayEn
+    Calendar_header_bottom_Hijri.innerText = `${Hijri} هـ`
+    Calendar_header_bottom_Gregorian.innerText = Gregorian
+
+    // الوقت
+    Hijri_Calendar_TIME.innerText = time
+
+    setInterval(() => {
+        let time = moment().locale('ar-SA').format('h:mm:ss a');
+        Hijri_Calendar_TIME.innerText = time
+    }, 1000);
+
+
+    // التفسير الميسر 
+
+    tfs_ayh.innerText = json_Random?.aya_text_emlaey;
+    tfs.innerHTML = json_Random?.aya_tafseer
+        ?.split('ﷺ')?.join('<span style="color: #b62b2b;">ﷺ</span>')
+        ?.split('الله')?.join('<span style="color: #b62b2b;">الله</span>')
+        ?.split('اللَّٰه')?.join('<span style="color: #b62b2b;">اللَّٰه</span>')
+        ?.split('عَزَّ وَجَلَّ')?.join('<span style="color: #b62b2b;">عَزَّ وَجَلَّ</span>')
+        ?.split('ﷻ')?.join('<span style="color: #b62b2b;">ﷻ</span>')
+        ?.split('سُبْحَانَهُ وَتَعَالَى')?.join('<span style="color: #b62b2b;">سُبْحَانَهُ وَتَعَالَى</span>')
+        ?.split('عليه السلام')?.join('<span style="color: #b62b2b;">عليه السلامﷺ</span>')
+        ?.split('رضي الله عنه')?.join('<span style="color: #b62b2b;">رضي الله عنه</span>')
+        ?.split('(')?.join('<span style="color: #797979;">(')?.split(')')?.join(')</span>')
+        ?.split('﴿')?.join(' <span style="color: #135016; font-family: var(--font3);">﴿')?.split('﴾')?.join('﴾</span>')
+        ?.split('«')?.join('<span style="color: #464970;">«')?.split('»')?.join('»</span>')
+        ?.split('[')?.join('<span style="color: #a79171;">[')?.split(']')?.join(']</span>');
+    tfs_name.innerText = json_Random?.sura_name_ar;
+    tfs_number.innerText = json_Random?.aya_no;
+
+</script>
+
+</html>
