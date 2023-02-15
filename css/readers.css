@@ -135,10 +135,6 @@
     border-radius: 5px;
 }
 
-::-webkit-media-controls-enclosure {
-    background-color: var(--b-color-7);
-}
-
 .readers_mp3 div {
     display: flex;
     justify-content: space-evenly;
@@ -160,6 +156,7 @@
 /* ============= AUDIO ============== */
 
 ::-webkit-media-controls-enclosure {
+    background-color: var(--b-color-7);
     border-radius: 5px;
     height: 20px;
 }

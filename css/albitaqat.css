@@ -1,0 +1,163 @@
+.albitaqat_home_top {
+    width: 90%;
+    background-color: var(--b-color-8);
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 13px;
+    color: var(--color-font-7);
+}
+
+.albitaqat_home_top img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.albitaqat_home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    direction: rtl;
+}
+
+.albitaqat_item {
+    width: 150px;
+    display: flex;
+    background-color: var(--background-header);
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.albitaqat_item:hover {
+    background-color: var(--b-color-3);
+}
+
+.albitaqat_item h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    color: var(--color-font-1);
+}
+
+.albitaqat_item p {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--color-font-8);
+}
+
+.albitaqat_item_number {
+    display: none;
+}
+
+
+/* صفحات البطقات */
+
+#albitaqat_title {
+    text-align: center;
+    color: var(--color-font-7);
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#albitaqat_n_p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+#albitaqat_n_p a {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--b-color-1);
+    border-radius: 5px;
+    color: var(--color-font-1);
+}
+
+#albitaqat_n_p a:hover {
+    background-color: var(--background-header);
+}
+
+#albitaqat {
+    display: table;
+    width: 100%;
+    direction: rtl;
+}
+
+#albitaqat td {
+    background-color: var(--b-color-8);
+    text-align: center;
+    padding: 5px;
+}
+
+#albitaqat_type {
+    color: var(--color-font-7);
+}
+
+#albitaqat_number {
+    width: 30px;
+    color: var(--color-font-1);
+    background-color: var(--b-color-1) !important;
+}
+
+#albitaqat_text {
+    text-align: right !important;
+}
+
+/* ============= AUDIO ============== */
+
+::-webkit-media-controls-enclosure {
+    background-color: var(--b-color-7);
+    border-radius: 5px;
+    height: 20px;
+}
+
+#albitaqat_audio {
+    margin-bottom: 30px;
+    display: block;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* عرض الهاتف */
+
+@media (max-width: 500px) {
+
+    .albitaqat_home {
+        display: block;
+    }
+
+    .albitaqat_item {
+        width: 85%;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .albitaqat_item_number {
+        display: block;
+        font-size: 17px !important;
+    }
+
+}
+
