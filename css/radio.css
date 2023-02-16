@@ -1,4 +1,4 @@
-#radio h1{
+#radio h1 {
     text-align: center;
     color: var(--color-font-7);
     font-size: 18px;
@@ -28,7 +28,9 @@
 
 }
 
-#radio_cover_flex_text, #radio_cover_flex_text p , #radio_cover_flex_text h3{
+#radio_cover_flex_text,
+#radio_cover_flex_text p,
+#radio_cover_flex_text h3 {
     display: block;
     margin-right: 10px;
     max-width: 300px;
@@ -40,12 +42,11 @@
 }
 
 #radio_cover_img {
-    display: block;;
+    display: block;
+    ;
     max-width: 40%;
     object-fit: cover;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ============= AUDIO ============== */
@@ -101,7 +102,7 @@
 }
 
 #radio_world li {
-    
+
     padding: 10px;
     margin: 5px 5px 5px 5px;
 }
@@ -120,7 +121,7 @@
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 #radio_world p {
@@ -130,23 +131,27 @@
 }
 
 
-@media (max-width: 450px) { 
+@media (max-width: 450px) {
 
     #radio_cover_flex {
         display: block;
         justify-content: center;
     }
 
-    #radio_cover_flex_text, #radio_cover_flex_text p , #radio_cover_flex_text h3{
+    #radio_cover_flex_text,
+    #radio_cover_flex_text p,
+    #radio_cover_flex_text h3 {
         display: block;
         margin-right: 0px !important;
         max-width: 100%;
         text-align: center;
     }
-    
-    
+
+
     #radio_cover_img {
         max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
