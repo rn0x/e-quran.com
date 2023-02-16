@@ -1,0 +1,152 @@
+#radio h1{
+    text-align: center;
+    color: var(--color-font-7);
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#radio_cover {
+    width: 90%;
+    background-color: var(--b-color-8);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#radio_cover_flex {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    direction: rtl;
+    word-break: break-all;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+#radio_cover_flex_text, #radio_cover_flex_text p , #radio_cover_flex_text h3{
+    display: block;
+    margin-right: 10px;
+    max-width: 300px;
+    text-align: right;
+}
+
+#radio_cover_flex_text h3 {
+    color: var(--color-font-7) !important;
+}
+
+#radio_cover_img {
+    display: block;;
+    max-width: 40%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============= AUDIO ============== */
+
+::-webkit-media-controls-enclosure {
+    background-color: var(--b-color-7);
+    border-radius: 5px;
+    height: 20px;
+}
+
+#radio_audio {
+    display: block;
+    margin-top: 30px;
+    background-color: var(--b-color-7);
+    border-radius: 8px;
+    padding: 5px;
+    align-self: center;
+}
+
+#radio_mp3 {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 100%;
+    background-color: var(--b-color-7);
+    border-radius: 5px;
+}
+
+
+/* radio_world */
+
+
+#radio_world_title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    color: var(--color-font-7);
+}
+
+
+#radio_world {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    padding: 0px;
+    direction: rtl;
+}
+
+#radio_world li {
+    
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#radio_world a {
+    text-decoration: none;
+    color: var(--color-font-7);
+}
+
+#radio_world img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#radio_world p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+@media (max-width: 450px) { 
+
+    #radio_cover_flex {
+        display: block;
+        justify-content: center;
+    }
+
+    #radio_cover_flex_text, #radio_cover_flex_text p , #radio_cover_flex_text h3{
+        display: block;
+        margin-right: 0px !important;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    
+    #radio_cover_img {
+        max-width: 70%;
+    }
+
+}
