@@ -1,0 +1,147 @@
+#Lectures_info {
+    width: 80%;
+    background-color: var(--b-color-8);
+    display: block;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+
+#Lectures_info_text {
+    margin-right: 10px;
+    font-size: 13px;
+    color: var(--color-font-7);
+    text-align: center;
+}
+
+#Search_Lectures {
+    display: block;
+    background-image: url(/icon/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+}
+
+
+#Lectures_index {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    direction: rtl;
+    font-family: var(--font1);
+    font-size: 16px;
+}
+
+#Lectures_index th,
+#Lectures_index td {
+    padding: 5px;
+    border: 1px solid var(--border-color-2);
+    color: var(--color-font-6);
+    align-items: center;
+}
+
+#Lectures_index th {
+    color: var(--color-font-1);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--background-header);
+    border-bottom: 4px solid var(--b-color-1);
+}
+
+#Lectures_index tr:nth-child(even) {
+    background-color: var(--b-color-7) !important;
+}
+
+#Lectures_index a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-font-7);
+}
+
+#Lectures_index a:hover {
+    color: var(--color-font-4);
+}
+
+
+#Lectures_video {
+    display: block;
+    direction: rtl;
+    width: 95%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: var(--b-color-8);
+}
+
+#Lectures_video h2 {
+    font-size: 13px;
+    color: var(--color-font-7);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#Lectures_video p {
+    font-size: 17px;
+    color: var(--color-font-2);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#Lectures_video span {
+    font-size: 13px;
+    color: var(--color-font-7);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#Lectures_video video {
+    display: block;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+#Lectures_video a {
+    width: 60%;
+    display: block;
+    font-size: 14px;
+    align-items: center;
+    color: var(--color-font-1);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-header);
+    border-radius: 7px;
+    padding: 7px;
+    text-decoration: none;
+}
